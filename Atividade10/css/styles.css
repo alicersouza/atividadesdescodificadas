@@ -1,16 +1,9 @@
-/* body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 130vh;
-*/
-
 .heart {
     background-color: deeppink;
     height: 100px;
     width: 100px;
     margin-top: 100px;
-    margin-left: 90px; 
+    margin-left: 90px;
     transform: rotate(-45deg);
     animation-name: heartbeat;
     animation-duration: 2s;
@@ -71,5 +64,5 @@ h2 {
     background-color: pink;
     margin-left: 40%;
     margin-top: 15%;
-   
+
 }
