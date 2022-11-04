@@ -1,0 +1,75 @@
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130vh;
+*/
+
+.heart {
+    background-color: deeppink;
+    height: 100px;
+    width: 100px;
+    margin-top: 100px;
+    margin-left: 90px; 
+    transform: rotate(-45deg);
+    animation-name: heartbeat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    background-color: deeppink;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -50px;
+    left: 0;
+}
+
+.heart::after {
+    left: 50px;
+    top: 0;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1) rotate(-45deg);
+    }
+
+    20% {
+        transform: scale(1.25) rotate(-45deg);
+    }
+
+    40% {
+        transform: scale(1.5) rotate(-45deg);
+    }
+}
+
+.texto {
+    text-align: center;
+}
+
+h1 {
+    color: deeppink;
+    padding-top: 30px;
+
+}
+
+h2 {
+    color: purple;
+}
+
+.box {
+    width: 275px;
+    height: 400px;
+    background-color: pink;
+    margin-left: 40%;
+    margin-top: 15%;
+   
+}
